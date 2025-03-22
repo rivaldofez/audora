@@ -1,0 +1,28 @@
+name: Audora Workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main, staging]
+
+jobs:
+  unit-tests:
+    name: Run Unit Tests
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -project Audora.xcodeproj \
+            -scheme AudoraTests \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -only-testing:AudoraTests \
+            CODE_SIGNING_ALLOWED=NO
