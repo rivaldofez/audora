@@ -24,7 +24,6 @@
 		7E52A47A2D8F14070010C789 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4792D8F14070010C789 /* RequestBuilder.swift */; };
 		7E52A47C2D8F181E0010C789 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A47B2D8F181E0010C789 /* Dictionary+Ext.swift */; };
 		7E52A4802D8F18FC0010C789 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */; };
-		7E52A4842D8F1CF20010C789 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4832D8F1CF20010C789 /* Dummy.swift */; };
 		7E52A4872D8F28420010C789 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4862D8F28420010C789 /* netfox */; };
 		7E52A4892D8F3D700010C789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4882D8F3D700010C789 /* AppDelegate.swift */; };
 		7E52A48B2D8F3E560010C789 /* NetworkDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A48A2D8F3E560010C789 /* NetworkDebugger.swift */; };
@@ -67,7 +66,6 @@
 		7E52A4792D8F14070010C789 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		7E52A47B2D8F181E0010C789 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 		7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		7E52A4832D8F1CF20010C789 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		7E52A4882D8F3D700010C789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E52A48A2D8F3E560010C789 /* NetworkDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDebugger.swift; path = ../../../../../../../.Trash/NetworkDebugger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */,
-				7E52A4832D8F1CF20010C789 /* Dummy.swift */,
 				7E52A4882D8F3D700010C789 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -412,7 +409,6 @@
 				7E52A46A2D8F0F830010C789 /* NetworkTarget.swift in Sources */,
 				7E52A41C2D8EFBC20010C789 /* AudoraApp.swift in Sources */,
 				7E52A45F2D8F0DB00010C789 /* BaseViewModel.swift in Sources */,
-				7E52A4842D8F1CF20010C789 /* Dummy.swift in Sources */,
 				7E52A4772D8F13620010C789 /* NetworkTarget+Ext.swift in Sources */,
 				7E52A48B2D8F3E560010C789 /* NetworkDebugger.swift in Sources */,
 			);
