@@ -94,9 +94,9 @@
 		7E52A41A2D8EFBC20010C789 /* Audora */ = {
 			isa = PBXGroup;
 			children = (
-				7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */,
+				7E52A4462D8F01B70010C789 /* Theme */,
+				7E52A4452D8F01AB0010C789 /* App */,
 				7E52A41D2D8EFBC20010C789 /* ContentView.swift */,
-				7E52A41F2D8EFBC40010C789 /* Assets.xcassets */,
 				7E52A4212D8EFBC40010C789 /* Preview Content */,
 			);
 			path = Audora;
@@ -125,6 +125,30 @@
 				7E52A4382D8EFBC50010C789 /* AudoraUITestsLaunchTests.swift */,
 			);
 			path = AudoraUITests;
+			sourceTree = "<group>";
+		};
+		7E52A4452D8F01AB0010C789 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7E52A4462D8F01B70010C789 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A4472D8F01BF0010C789 /* Asset */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		7E52A4472D8F01BF0010C789 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A41F2D8EFBC40010C789 /* Assets.xcassets */,
+			);
+			path = Asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
