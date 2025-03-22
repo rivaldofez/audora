@@ -17,8 +17,17 @@
 		7E52A45F2D8F0DB00010C789 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4592D8F0DB00010C789 /* BaseViewModel.swift */; };
 		7E52A4602D8F0DB00010C789 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A45A2D8F0DB00010C789 /* NetworkError.swift */; };
 		7E52A4612D8F0DB00010C789 /* WorkScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A45B2D8F0DB00010C789 /* WorkScheduler.swift */; };
-		7E52A4652D8F0F470010C789 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4642D8F0F470010C789 /* Alamofire */; };
-		7E52A4672D8F0F470010C789 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4662D8F0F470010C789 /* AlamofireDynamic */; };
+		7E52A46A2D8F0F830010C789 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4692D8F0F830010C789 /* NetworkTarget.swift */; };
+		7E52A46D2D8F10210010C789 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A46C2D8F10210010C789 /* Configuration.swift */; };
+		7E52A4752D8F13270010C789 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4742D8F13270010C789 /* Alamofire */; };
+		7E52A4772D8F13620010C789 /* NetworkTarget+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4762D8F13620010C789 /* NetworkTarget+Ext.swift */; };
+		7E52A47A2D8F14070010C789 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4792D8F14070010C789 /* RequestBuilder.swift */; };
+		7E52A47C2D8F181E0010C789 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A47B2D8F181E0010C789 /* Dictionary+Ext.swift */; };
+		7E52A4802D8F18FC0010C789 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */; };
+		7E52A4842D8F1CF20010C789 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4832D8F1CF20010C789 /* Dummy.swift */; };
+		7E52A4872D8F28420010C789 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4862D8F28420010C789 /* netfox */; };
+		7E52A4892D8F3D700010C789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4882D8F3D700010C789 /* AppDelegate.swift */; };
+		7E52A48B2D8F3E560010C789 /* NetworkDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A48A2D8F3E560010C789 /* NetworkDebugger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		7E52A4592D8F0DB00010C789 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7E52A45A2D8F0DB00010C789 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7E52A45B2D8F0DB00010C789 /* WorkScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkScheduler.swift; sourceTree = "<group>"; };
+		7E52A4692D8F0F830010C789 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		7E52A46C2D8F10210010C789 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		7E52A4762D8F13620010C789 /* NetworkTarget+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTarget+Ext.swift"; sourceTree = "<group>"; };
+		7E52A4792D8F14070010C789 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		7E52A47B2D8F181E0010C789 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
+		7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		7E52A4832D8F1CF20010C789 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		7E52A4882D8F3D700010C789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E52A48A2D8F3E560010C789 /* NetworkDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDebugger.swift; path = ../../../../../../../.Trash/NetworkDebugger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E52A4652D8F0F470010C789 /* Alamofire in Frameworks */,
-				7E52A4672D8F0F470010C789 /* AlamofireDynamic in Frameworks */,
+				7E52A4872D8F28420010C789 /* netfox in Frameworks */,
+				7E52A4752D8F13270010C789 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +122,7 @@
 		7E52A41A2D8EFBC20010C789 /* Audora */ = {
 			isa = PBXGroup;
 			children = (
+				7E52A47D2D8F18920010C789 /* Data */,
 				7E52A45E2D8F0DB00010C789 /* Core */,
 				7E52A4462D8F01B70010C789 /* Theme */,
 				7E52A4452D8F01AB0010C789 /* App */,
@@ -142,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */,
+				7E52A4832D8F1CF20010C789 /* Dummy.swift */,
+				7E52A4882D8F3D700010C789 /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -175,6 +196,10 @@
 		7E52A45D2D8F0DB00010C789 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				7E52A47E2D8F18BA0010C789 /* NetworkClient */,
+				7E52A4782D8F13F30010C789 /* RequestBuilder */,
+				7E52A46B2D8F0FD60010C789 /* Utility */,
+				7E52A4682D8F0F780010C789 /* Request */,
 				7E52A4622D8F0E2E0010C789 /* Type */,
 			);
 			path = Networking;
@@ -192,8 +217,50 @@
 		7E52A4622D8F0E2E0010C789 /* Type */ = {
 			isa = PBXGroup;
 			children = (
+				7E52A47B2D8F181E0010C789 /* Dictionary+Ext.swift */,
 			);
 			path = Type;
+			sourceTree = "<group>";
+		};
+		7E52A4682D8F0F780010C789 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A4692D8F0F830010C789 /* NetworkTarget.swift */,
+				7E52A4762D8F13620010C789 /* NetworkTarget+Ext.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		7E52A46B2D8F0FD60010C789 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A48A2D8F3E560010C789 /* NetworkDebugger.swift */,
+				7E52A46C2D8F10210010C789 /* Configuration.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7E52A4782D8F13F30010C789 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A4792D8F14070010C789 /* RequestBuilder.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		7E52A47D2D8F18920010C789 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7E52A47E2D8F18BA0010C789 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */,
+			);
+			path = NetworkClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +280,8 @@
 			);
 			name = Audora;
 			packageProductDependencies = (
-				7E52A4642D8F0F470010C789 /* Alamofire */,
-				7E52A4662D8F0F470010C789 /* AlamofireDynamic */,
+				7E52A4742D8F13270010C789 /* Alamofire */,
+				7E52A4862D8F28420010C789 /* netfox */,
 			);
 			productName = Audora;
 			productReference = 7E52A4182D8EFBC20010C789 /* Audora.app */;
@@ -289,7 +356,8 @@
 			);
 			mainGroup = 7E52A40F2D8EFBC20010C789;
 			packageReferences = (
-				7E52A4632D8F0F470010C789 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7E52A4732D8F13270010C789 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7E52A4852D8F28420010C789 /* XCRemoteSwiftPackageReference "netfox" */,
 			);
 			productRefGroup = 7E52A4192D8EFBC20010C789 /* Products */;
 			projectDirPath = "";
@@ -335,9 +403,18 @@
 			files = (
 				7E52A41E2D8EFBC20010C789 /* ContentView.swift in Sources */,
 				7E52A4612D8F0DB00010C789 /* WorkScheduler.swift in Sources */,
+				7E52A46D2D8F10210010C789 /* Configuration.swift in Sources */,
+				7E52A4802D8F18FC0010C789 /* NetworkClient.swift in Sources */,
+				7E52A4892D8F3D700010C789 /* AppDelegate.swift in Sources */,
+				7E52A47C2D8F181E0010C789 /* Dictionary+Ext.swift in Sources */,
+				7E52A47A2D8F14070010C789 /* RequestBuilder.swift in Sources */,
 				7E52A4602D8F0DB00010C789 /* NetworkError.swift in Sources */,
+				7E52A46A2D8F0F830010C789 /* NetworkTarget.swift in Sources */,
 				7E52A41C2D8EFBC20010C789 /* AudoraApp.swift in Sources */,
 				7E52A45F2D8F0DB00010C789 /* BaseViewModel.swift in Sources */,
+				7E52A4842D8F1CF20010C789 /* Dummy.swift in Sources */,
+				7E52A4772D8F13620010C789 /* NetworkTarget+Ext.swift in Sources */,
+				7E52A48B2D8F3E560010C789 /* NetworkDebugger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +746,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7E52A4632D8F0F470010C789 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		7E52A4732D8F13270010C789 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -677,18 +754,26 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		7E52A4852D8F28420010C789 /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.21.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E52A4642D8F0F470010C789 /* Alamofire */ = {
+		7E52A4742D8F13270010C789 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7E52A4632D8F0F470010C789 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 7E52A4732D8F13270010C789 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		7E52A4662D8F0F470010C789 /* AlamofireDynamic */ = {
+		7E52A4862D8F28420010C789 /* netfox */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7E52A4632D8F0F470010C789 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
+			package = 7E52A4852D8F28420010C789 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
