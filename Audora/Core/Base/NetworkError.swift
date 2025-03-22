@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum NetworkError: Error {
     case general
@@ -25,4 +26,5 @@ enum NetworkError: Error {
     case urlError(URLError)
     case httpError(HTTPURLResponse)
     case type(Error)
+    case alamofire(AFError)
 }
