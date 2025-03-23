@@ -68,6 +68,7 @@ class PlayerViewModel: ObservableObject {
         
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: playerItem, queue: .main) { [weak self] _ in
             self?.isPlaying = false
+            self?.onTapPlayTrack?(false)
         }
     }
     
