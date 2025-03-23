@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E52A41C2D8EFBC20010C789 /* AudoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */; };
-		7E52A41E2D8EFBC20010C789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A41D2D8EFBC20010C789 /* ContentView.swift */; };
 		7E52A4202D8EFBC40010C789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A41F2D8EFBC40010C789 /* Assets.xcassets */; };
 		7E52A4232D8EFBC40010C789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4222D8EFBC40010C789 /* Preview Assets.xcassets */; };
 		7E52A42D2D8EFBC40010C789 /* AudoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A42C2D8EFBC40010C789 /* AudoraTests.swift */; };
@@ -77,7 +76,6 @@
 /* Begin PBXFileReference section */
 		7E52A4182D8EFBC20010C789 /* Audora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudoraApp.swift; sourceTree = "<group>"; };
-		7E52A41D2D8EFBC20010C789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E52A41F2D8EFBC40010C789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E52A4222D8EFBC40010C789 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E52A4282D8EFBC40010C789 /* AudoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,7 +184,6 @@
 				7E52A45E2D8F0DB00010C789 /* Core */,
 				7E52A4462D8F01B70010C789 /* Theme */,
 				7E52A4452D8F01AB0010C789 /* App */,
-				7E52A41D2D8EFBC20010C789 /* ContentView.swift */,
 				7E52A4212D8EFBC40010C789 /* Preview Content */,
 			);
 			path = Audora;
@@ -595,7 +592,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E52A48D2D8F469F0010C789 /* NetworkDebugger.swift in Sources */,
-				7E52A41E2D8EFBC20010C789 /* ContentView.swift in Sources */,
 				7E8B4CA22D8FF112001F626E /* SpectrumView.swift in Sources */,
 				7E52A4BA2D8F4E870010C789 /* FontManager.swift in Sources */,
 				7E52A4612D8F0DB00010C789 /* WorkScheduler.swift in Sources */,

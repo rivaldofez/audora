@@ -36,18 +36,25 @@ final class MusicPlayerViewModel: DefaultViewModel, MusicPlayerViewModelProtocol
             onTapPrevTrack: { [weak self] in self?.onTapPrevTrack() },
             onTapPlayTrack: { [weak self] in self?.onTapPlayTrack(state: $0) }
         )
-        
-        getMusicList(query: "die with a smile")
+
+        bindListener()
     }
     
     func getMusicList(query: String) {
-        call(argument: musicUseCase.getMusicList(query: query)) { [weak self] data in
+        let resultQuery = query.isEmpty ? "bruno mars" : query
+        call(argument: musicUseCase.getMusicList(query: resultQuery)) { [weak self] data in
             self?.musicList = data?.results ?? []
         }
     }
     
-    func searchMusic(query: String) {
-        
+    private func bindListener() {
+        $searchQuery
+        .debounce(for: .seconds(0.5), scheduler: WorkScheduler.mainScheduler)
+        .removeDuplicates()
+        .sink { [weak self] newValue in
+            self?.getMusicList(query: newValue)
+        }
+        .store(in: &cancellables)
     }
     
     func onTapNextTrack() {
