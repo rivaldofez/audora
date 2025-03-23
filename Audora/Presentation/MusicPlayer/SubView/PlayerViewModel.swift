@@ -11,6 +11,7 @@ import AVFoundation
 class PlayerViewModel: ObservableObject {
     var onTapNextTrack: (() -> Void)? = nil
     var onTapPrevTrack: (() -> Void)? = nil
+    var onTapPlayTrack: ((Bool) -> Void)? = nil
     
     @Published var player = AVPlayer()
     @Published var isPlaying = false
@@ -21,9 +22,10 @@ class PlayerViewModel: ObservableObject {
     
     private var observer: NSKeyValueObservation?
     
-    init(onTapNextTrack: ( () -> Void)? = nil, onTapPrevTrack: ( () -> Void)? = nil, player: AVPlayer = AVPlayer(), isPlaying: Bool = false, currentTime: Double = 0.0, duration: Double = 1.0, volume: Float = 0.5) {
+    init(onTapNextTrack: (() -> Void)? = nil, onTapPrevTrack: (() -> Void)? = nil, onTapPlayTrack: ((Bool) -> Void)? = nil, player: AVPlayer = AVPlayer(), isPlaying: Bool = false, currentTime: Double = 0.0, duration: Double = 1.0, volume: Float = 0.5) {
         self.onTapNextTrack = onTapNextTrack
         self.onTapPrevTrack = onTapPrevTrack
+        self.onTapPlayTrack = onTapPlayTrack
         self.player = player
         self.isPlaying = isPlaying
         self.currentTime = currentTime
@@ -79,6 +81,7 @@ class PlayerViewModel: ObservableObject {
             player.play()
         }
         isPlaying.toggle()
+        onTapPlayTrack?(isPlaying)
     }
     
     func seekForward() {
