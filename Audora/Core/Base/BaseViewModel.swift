@@ -11,12 +11,13 @@ import SwiftUI
 
 enum ViewModelStatus: Equatable {
     case loading
-    case dismissError
-    case gotError(title: String)
+    case finish
+    case success
+    case error(title: String)
 }
 
 protocol BaseViewModelEventSource: AnyObject {
-    var loadingState: CurrentValueSubject<ViewModelStatus, Never> { get }
+    var viewState: CurrentValueSubject<ViewModelStatus, Never> { get }
 }
 
 protocol ViewModelService: AnyObject {
@@ -30,7 +31,7 @@ typealias BaseViewModel = BaseViewModelEventSource & ViewModelService
 
 open class DefaultViewModel: BaseViewModel, ObservableObject {
     
-    var loadingState = CurrentValueSubject<ViewModelStatus, Never>(.dismissError)
+    var viewState = CurrentValueSubject<ViewModelStatus, Never>(.finish)
     var cancellables = Set<AnyCancellable>()
     
     func call<ReturnType>(
@@ -39,7 +40,7 @@ open class DefaultViewModel: BaseViewModel, ObservableObject {
         callback: @escaping (_ data: ReturnType) -> Void
     ) {
         if callWithIndicator {
-            self.loadingState.send(.loading)
+            self.viewState.send(.loading)
         }
         
         argument
@@ -49,14 +50,15 @@ open class DefaultViewModel: BaseViewModel, ObservableObject {
                 receiveCompletion: { [weak self] completion in
                     switch completion {
                     case .failure(let error):
-                        self?.loadingState.send(.dismissError)
-                        self?.loadingState.send(.gotError(title: error.localizedDescription))
+                        self?.viewState.send(.error(title: error.localizedDescription))
+                        break
                     case .finished:
-                        self?.loadingState.send(.dismissError)
+                        break
                     }
                 },
                 receiveValue: { data in
                     callback(data)
+                    self.viewState.send(.success)
                 }
             )
             .store(in: &cancellables)

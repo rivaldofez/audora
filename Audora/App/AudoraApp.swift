@@ -11,9 +11,13 @@ import SwiftUI
 struct AudoraApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
+    init(){
+        DIContainer.shared.registration()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MusicPlayerView()
         }
     }
 }
