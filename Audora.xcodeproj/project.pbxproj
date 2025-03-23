@@ -55,6 +55,8 @@
 		7E8B4CA72D8FFC71001F626E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CA62D8FFC71001F626E /* PlayerViewModel.swift */; };
 		7E8B4CB62D9015DA001F626E /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CB52D9015DA001F626E /* Shimmer.swift */; };
 		7E8B4CB92D901B74001F626E /* GeneralErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */; };
+		7E8B4CBC2D9020EE001F626E /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CBB2D9020EE001F626E /* RoundedCornerShape.swift */; };
+		7E8B4CBF2D90210A001F626E /* AnyTransition+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		7E8B4CA62D8FFC71001F626E /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		7E8B4CB52D9015DA001F626E /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
 		7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorView.swift; sourceTree = "<group>"; };
+		7E8B4CBB2D9020EE001F626E /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
+		7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,12 +181,11 @@
 		7E52A41A2D8EFBC20010C789 /* Audora */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B4CBD2D9020FC001F626E /* Extension */,
 				7E8B4C842D8FBA67001F626E /* Injection */,
 				7E8B4C802D8FB839001F626E /* Component */,
 				7E52A4BC2D8FACAA0010C789 /* Info.plist */,
-				7E52A4BB2D8F4E910010C789 /* Extension */,
-				7E52A48E2D8F481D0010C789 /* Presentation */,
-				7E52A47D2D8F18920010C789 /* Data */,
+				7E52A48E2D8F481D0010C789 /* Module */,
 				7E52A45E2D8F0DB00010C789 /* Core */,
 				7E52A4462D8F01B70010C789 /* Theme */,
 				7E52A4452D8F01AB0010C789 /* App */,
@@ -307,13 +310,6 @@
 			path = RequestBuilder;
 			sourceTree = "<group>";
 		};
-		7E52A47D2D8F18920010C789 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		7E52A47E2D8F18BA0010C789 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,12 +318,12 @@
 			path = NetworkClient;
 			sourceTree = "<group>";
 		};
-		7E52A48E2D8F481D0010C789 /* Presentation */ = {
+		7E52A48E2D8F481D0010C789 /* Module */ = {
 			isa = PBXGroup;
 			children = (
 				7E8B4C872D8FBA99001F626E /* MusicPlayer */,
 			);
-			path = Presentation;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		7E52A48F2D8F4BF80010C789 /* Font */ = {
@@ -360,16 +356,10 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
-		7E52A4BB2D8F4E910010C789 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		7E8B4C802D8FB839001F626E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B4CBA2D9020DF001F626E /* Shape */,
 				7E8B4CB72D901B66001F626E /* GeneralError */,
 				7E8B4CB42D9015D0001F626E /* Shimmer */,
 				7E8B4C812D8FB840001F626E /* ViewModifier */,
@@ -397,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				7E8B4CA92D9001B9001F626E /* Model */,
-				7E8B4CA82D9001AA001F626E /* Network */,
+				7E8B4CA82D9001AA001F626E /* Domain */,
 				7E8B4CA52D8FFC65001F626E /* SubView */,
 				7E8B4C9C2D8FE2AF001F626E /* Component */,
 				7E8B4C902D8FC0B6001F626E /* MusicPlayerView.swift */,
@@ -425,13 +415,13 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
-		7E8B4CA82D9001AA001F626E /* Network */ = {
+		7E8B4CA82D9001AA001F626E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				7E8B4C8A2D8FBAE8001F626E /* MusicUseCase.swift */,
 				7E8B4C8E2D8FBBA2001F626E /* MusicRemote.swift */,
 			);
-			path = Network;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		7E8B4CA92D9001B9001F626E /* Model */ = {
@@ -456,6 +446,22 @@
 				7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */,
 			);
 			path = GeneralError;
+			sourceTree = "<group>";
+		};
+		7E8B4CBA2D9020DF001F626E /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CBB2D9020EE001F626E /* RoundedCornerShape.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		7E8B4CBD2D9020FC001F626E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,6 +630,7 @@
 				7E8B4CA02D8FE675001F626E /* MusicItemView.swift in Sources */,
 				7E8B4CB92D901B74001F626E /* GeneralErrorView.swift in Sources */,
 				7E8B4C912D8FC0B6001F626E /* MusicPlayerView.swift in Sources */,
+				7E8B4CBC2D9020EE001F626E /* RoundedCornerShape.swift in Sources */,
 				7E52A47A2D8F14070010C789 /* RequestBuilder.swift in Sources */,
 				7E8B4C832D8FB850001F626E /* NavigationBarModifier.swift in Sources */,
 				7E8B4C9E2D8FE2BA001F626E /* SearchView.swift in Sources */,
@@ -635,6 +642,7 @@
 				7E8B4CB62D9015DA001F626E /* Shimmer.swift in Sources */,
 				7E8B4C8B2D8FBAE8001F626E /* MusicUseCase.swift in Sources */,
 				7E8B4C862D8FBA73001F626E /* Injection.swift in Sources */,
+				7E8B4CBF2D90210A001F626E /* AnyTransition+Ext.swift in Sources */,
 				7E8B4C8F2D8FBBA2001F626E /* MusicRemote.swift in Sources */,
 				7E52A4772D8F13620010C789 /* NetworkTarget+Ext.swift in Sources */,
 			);
