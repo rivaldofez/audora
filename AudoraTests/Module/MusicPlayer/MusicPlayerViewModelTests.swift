@@ -31,7 +31,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         super.tearDown()
     }
     
-    func testMainViewModel_WhenGetMusicList_ShouldReturnResponse() {
+    func testMusicPlayerViewModel_WhenGetMusicList_ShouldReturnResponse() {
         //Arrange
         let data = MusicResponseMock.response
         let expectation = XCTestExpectation(description: "Result")
@@ -51,7 +51,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
     
-    func testMainViewModel_WhenGetMusicList_ShouldReturnNil() {
+    func testMusicPlayerViewModel_WhenGetMusicList_ShouldReturnNil() {
         let data: Audora.MusicResponse? = nil
         let expectation = XCTestExpectation(description: "Result")
 
@@ -70,7 +70,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
     
-    func testMainViewModel_WhenSelectMusic_ShouldSuccess() {
+    func testMusicPlayerViewModel_WhenSelectMusic_ShouldSuccess() {
         //Arrange
         let data = MusicResponseMock.response
         let expectation = XCTestExpectation(description: "Result")
@@ -90,7 +90,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
     
-    func testMainViewModel_WhenTapNextMusic_ShouldSuccess() {
+    func testMusicPlayerViewModel_WhenTapNextMusic_ShouldSuccess() {
         //Arrange
         let data = MusicResponseMock.response
         let expectation = XCTestExpectation(description: "Result")
@@ -113,7 +113,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
     
-    func testMainViewModel_WhenTapPrevMusic_ShouldSuccess() {
+    func testMusicPlayerViewModel_WhenTapPrevMusic_ShouldSuccess() {
         let data = MusicResponseMock.response
         let expectation = XCTestExpectation(description: "Result")
 
@@ -135,7 +135,7 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
     
-    func testMainViewModel_WhenTapPlayMusic_ShouldSuccess() {
+    func testMusicPlayerViewModel_WhenTapPlayMusic_ShouldSuccess() {
         let data = MusicResponseMock.response
         let expectation = XCTestExpectation(description: "Result")
 
@@ -155,39 +155,3 @@ final class MusicPlayerViewModelTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1)
     }
 }
-
-//func onTapNextTrack() {
-//    guard let currentIndex = musicList.firstIndex(where: { $0 == selectedMusic }) else {
-//        if !musicList.isEmpty {
-//            selectMusic(selectedMusic: musicList[0])
-//        }
-//        return
-//    }
-//    
-//    if currentIndex < musicList.count - 1 {
-//        selectMusic(selectedMusic: musicList[currentIndex + 1])
-//    }
-//}
-//
-//func onTapPrevTrack() {
-//    guard let currentIndex = musicList.firstIndex(where: { $0 == selectedMusic }) else {
-//        if !musicList.isEmpty {
-//            selectMusic(selectedMusic: musicList[0])
-//        }
-//        return
-//    }
-//    
-//    if currentIndex > 0 {
-//        selectMusic(selectedMusic: musicList[currentIndex - 1])
-//    }
-//}
-//
-//func onTapPlayTrack(state: Bool) {
-//    isPlayingMusic = state
-//}
-//
-//func selectMusic(selectedMusic: MusicItemResponse) {
-//    self.selectedMusic = selectedMusic
-//    playerViewModel.setupPlayer(url: selectedMusic.previewURL ?? "")
-//    
-//}

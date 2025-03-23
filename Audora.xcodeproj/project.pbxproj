@@ -57,6 +57,12 @@
 		7E8B4CB92D901B74001F626E /* GeneralErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */; };
 		7E8B4CBC2D9020EE001F626E /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CBB2D9020EE001F626E /* RoundedCornerShape.swift */; };
 		7E8B4CBF2D90210A001F626E /* AnyTransition+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */; };
+		7E8B4CC42D902562001F626E /* PlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CC32D902562001F626E /* PlayerViewModelTests.swift */; };
+		7E8B4CC62D9025D7001F626E /* MusicPlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CC52D9025D6001F626E /* MusicPlayerViewModelTests.swift */; };
+		7E8B4CC92D9026AD001F626E /* MusicRemoteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CC82D9026AD001F626E /* MusicRemoteMock.swift */; };
+		7E8B4CCB2D902862001F626E /* MusicUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCA2D902862001F626E /* MusicUseCaseMock.swift */; };
+		7E8B4CCD2D902A41001F626E /* MusicResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCC2D902A41001F626E /* MusicResponseMock.swift */; };
+		7E8B4CCF2D902D3C001F626E /* Publisher+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCE2D902D3C001F626E /* Publisher+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +135,12 @@
 		7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorView.swift; sourceTree = "<group>"; };
 		7E8B4CBB2D9020EE001F626E /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
 		7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Ext.swift"; sourceTree = "<group>"; };
+		7E8B4CC32D902562001F626E /* PlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelTests.swift; sourceTree = "<group>"; };
+		7E8B4CC52D9025D6001F626E /* MusicPlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewModelTests.swift; sourceTree = "<group>"; };
+		7E8B4CC82D9026AD001F626E /* MusicRemoteMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRemoteMock.swift; sourceTree = "<group>"; };
+		7E8B4CCA2D902862001F626E /* MusicUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicUseCaseMock.swift; sourceTree = "<group>"; };
+		7E8B4CCC2D902A41001F626E /* MusicResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponseMock.swift; sourceTree = "<group>"; };
+		7E8B4CCE2D902D3C001F626E /* Publisher+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +217,7 @@
 		7E52A42B2D8EFBC40010C789 /* AudoraTests */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B4CC12D90253D001F626E /* Module */,
 				7E52A42C2D8EFBC40010C789 /* AudoraTests.swift */,
 			);
 			path = AudoraTests;
@@ -460,8 +473,37 @@
 			isa = PBXGroup;
 			children = (
 				7E8B4CBE2D90210A001F626E /* AnyTransition+Ext.swift */,
+				7E8B4CCE2D902D3C001F626E /* Publisher+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7E8B4CC12D90253D001F626E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CC22D902549001F626E /* MusicPlayer */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		7E8B4CC22D902549001F626E /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CC72D902698001F626E /* Mock */,
+				7E8B4CC32D902562001F626E /* PlayerViewModelTests.swift */,
+				7E8B4CC52D9025D6001F626E /* MusicPlayerViewModelTests.swift */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		7E8B4CC72D902698001F626E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CC82D9026AD001F626E /* MusicRemoteMock.swift */,
+				7E8B4CCA2D902862001F626E /* MusicUseCaseMock.swift */,
+				7E8B4CCC2D902A41001F626E /* MusicResponseMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,6 +663,7 @@
 				7E52A4BA2D8F4E870010C789 /* FontManager.swift in Sources */,
 				7E52A4612D8F0DB00010C789 /* WorkScheduler.swift in Sources */,
 				7E52A46D2D8F10210010C789 /* Configuration.swift in Sources */,
+				7E8B4CCF2D902D3C001F626E /* Publisher+Ext.swift in Sources */,
 				7E52A4802D8F18FC0010C789 /* NetworkClient.swift in Sources */,
 				7E8B4CA42D8FF95E001F626E /* PlayerView.swift in Sources */,
 				7E52A4892D8F3D700010C789 /* AppDelegate.swift in Sources */,
@@ -652,7 +695,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8B4CC62D9025D7001F626E /* MusicPlayerViewModelTests.swift in Sources */,
+				7E8B4CCB2D902862001F626E /* MusicUseCaseMock.swift in Sources */,
 				7E52A42D2D8EFBC40010C789 /* AudoraTests.swift in Sources */,
+				7E8B4CC42D902562001F626E /* PlayerViewModelTests.swift in Sources */,
+				7E8B4CCD2D902A41001F626E /* MusicResponseMock.swift in Sources */,
+				7E8B4CC92D9026AD001F626E /* MusicRemoteMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
