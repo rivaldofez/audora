@@ -31,7 +31,7 @@ struct SearchView: View {
                 })
             }
         }
-        .background(.white)
+        .background(.background)
         .cornerRadius(10)
     }
 }

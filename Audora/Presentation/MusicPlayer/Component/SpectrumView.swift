@@ -21,7 +21,7 @@ struct SpectrumView: View {
             HStack(spacing: 4) {
                 ForEach(0..<bars.count, id: \.self) { index in
                     RoundedRectangle(cornerRadius: 5)
-                        .fill(LinearGradient(gradient: Gradient(colors: [Color.black, Color.gray]), startPoint: .top, endPoint: .bottom))
+                        .fill(LinearGradient(gradient: Gradient(colors: [Color.primary, Color.gray]), startPoint: .top, endPoint: .bottom))
                         .frame(width: geometry.size.width / CGFloat(bars.count), height: CGFloat(bars[index] * geometry.size.height))
                         .animation(.easeInOut(duration: 0.2), value: bars[index])
                 }

@@ -67,7 +67,7 @@ struct MusicItemView: View {
                 
                 Text(artistName)
                     .font(.custom(.rubik, size: 12, weight: .medium))
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(.primary.opacity(0.7))
                     .lineLimit(1)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
@@ -87,6 +87,43 @@ struct MusicItemView: View {
             }
         }
         .shadow(color: .gray.opacity(0.3), radius: 10)
+    }
+}
+
+struct MusicItemViewShimmer: View {
+    var body: some View {
+        HStack(alignment: .center, spacing: 16) {
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.gray.opacity(0.3))
+                .frame(width: 65, height: 65)
+                .shimmer()
+            
+            VStack(alignment: .leading, spacing: 4) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(height: 16)
+                    .shimmer()
+                
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 16)
+                    .shimmer()
+                
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 16)
+                    .shimmer()
+            }
+            
+            Spacer()
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.gray.opacity(0.3))
+                .frame(width: 40, height: 30)
+                .shimmer()
+        }
     }
 }
 
