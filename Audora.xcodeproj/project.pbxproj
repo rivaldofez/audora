@@ -27,6 +27,21 @@
 		7E52A4872D8F28420010C789 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 7E52A4862D8F28420010C789 /* netfox */; };
 		7E52A4892D8F3D700010C789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4882D8F3D700010C789 /* AppDelegate.swift */; };
 		7E52A48D2D8F469F0010C789 /* NetworkDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A48C2D8F469F0010C789 /* NetworkDebugger.swift */; };
+		7E52A4A92D8F4C7E0010C789 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A49B2D8F4C7D0010C789 /* Rubik-Light.ttf */; };
+		7E52A4AA2D8F4C7E0010C789 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A49C2D8F4C7D0010C789 /* Rubik-ExtraBold.ttf */; };
+		7E52A4AB2D8F4C7E0010C789 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A49D2D8F4C7D0010C789 /* Rubik-Black.ttf */; };
+		7E52A4AC2D8F4C7E0010C789 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A49E2D8F4C7D0010C789 /* Rubik-LightItalic.ttf */; };
+		7E52A4AD2D8F4C7E0010C789 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A49F2D8F4C7D0010C789 /* Rubik-SemiBold.ttf */; };
+		7E52A4AE2D8F4C7E0010C789 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A02D8F4C7D0010C789 /* Rubik-BlackItalic.ttf */; };
+		7E52A4AF2D8F4C7E0010C789 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A12D8F4C7D0010C789 /* Rubik-Regular.ttf */; };
+		7E52A4B02D8F4C7E0010C789 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A22D8F4C7D0010C789 /* Rubik-BoldItalic.ttf */; };
+		7E52A4B22D8F4C7E0010C789 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A42D8F4C7D0010C789 /* Rubik-SemiBoldItalic.ttf */; };
+		7E52A4B32D8F4C7E0010C789 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A52D8F4C7D0010C789 /* Rubik-Bold.ttf */; };
+		7E52A4B42D8F4C7E0010C789 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A62D8F4C7D0010C789 /* Rubik-ExtraBoldItalic.ttf */; };
+		7E52A4B52D8F4C7E0010C789 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A72D8F4C7E0010C789 /* Rubik-Medium.ttf */; };
+		7E52A4B62D8F4C7E0010C789 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A82D8F4C7E0010C789 /* Rubik-MediumItalic.ttf */; };
+		7E52A4BA2D8F4E870010C789 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4B92D8F4E870010C789 /* FontManager.swift */; };
+		7E52A4BD2D8FAFBE0010C789 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A32D8F4C7D0010C789 /* Rubik-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +83,22 @@
 		7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		7E52A4882D8F3D700010C789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E52A48C2D8F469F0010C789 /* NetworkDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDebugger.swift; sourceTree = "<group>"; };
+		7E52A49B2D8F4C7D0010C789 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		7E52A49C2D8F4C7D0010C789 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7E52A49D2D8F4C7D0010C789 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		7E52A49E2D8F4C7D0010C789 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		7E52A49F2D8F4C7D0010C789 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		7E52A4A02D8F4C7D0010C789 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7E52A4A12D8F4C7D0010C789 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		7E52A4A22D8F4C7D0010C789 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7E52A4A32D8F4C7D0010C789 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		7E52A4A42D8F4C7D0010C789 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7E52A4A52D8F4C7D0010C789 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		7E52A4A62D8F4C7D0010C789 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7E52A4A72D8F4C7E0010C789 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		7E52A4A82D8F4C7E0010C789 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7E52A4B92D8F4E870010C789 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		7E52A4BC2D8FACAA0010C789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +151,9 @@
 		7E52A41A2D8EFBC20010C789 /* Audora */ = {
 			isa = PBXGroup;
 			children = (
+				7E52A4BC2D8FACAA0010C789 /* Info.plist */,
+				7E52A4BB2D8F4E910010C789 /* Extension */,
+				7E52A48E2D8F481D0010C789 /* Presentation */,
 				7E52A47D2D8F18920010C789 /* Data */,
 				7E52A45E2D8F0DB00010C789 /* Core */,
 				7E52A4462D8F01B70010C789 /* Theme */,
@@ -167,6 +201,7 @@
 		7E52A4462D8F01B70010C789 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				7E52A48F2D8F4BF80010C789 /* Font */,
 				7E52A4472D8F01BF0010C789 /* Asset */,
 			);
 			path = Theme;
@@ -258,6 +293,50 @@
 				7E52A47F2D8F18FC0010C789 /* NetworkClient.swift */,
 			);
 			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		7E52A48E2D8F481D0010C789 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7E52A48F2D8F4BF80010C789 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A4902D8F4BFE0010C789 /* Files */,
+				7E52A4B92D8F4E870010C789 /* FontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7E52A4902D8F4BFE0010C789 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E52A49D2D8F4C7D0010C789 /* Rubik-Black.ttf */,
+				7E52A4A02D8F4C7D0010C789 /* Rubik-BlackItalic.ttf */,
+				7E52A4A52D8F4C7D0010C789 /* Rubik-Bold.ttf */,
+				7E52A4A22D8F4C7D0010C789 /* Rubik-BoldItalic.ttf */,
+				7E52A49C2D8F4C7D0010C789 /* Rubik-ExtraBold.ttf */,
+				7E52A4A62D8F4C7D0010C789 /* Rubik-ExtraBoldItalic.ttf */,
+				7E52A4A32D8F4C7D0010C789 /* Rubik-Italic.ttf */,
+				7E52A49B2D8F4C7D0010C789 /* Rubik-Light.ttf */,
+				7E52A49E2D8F4C7D0010C789 /* Rubik-LightItalic.ttf */,
+				7E52A4A72D8F4C7E0010C789 /* Rubik-Medium.ttf */,
+				7E52A4A82D8F4C7E0010C789 /* Rubik-MediumItalic.ttf */,
+				7E52A4A12D8F4C7D0010C789 /* Rubik-Regular.ttf */,
+				7E52A49F2D8F4C7D0010C789 /* Rubik-SemiBold.ttf */,
+				7E52A4A42D8F4C7D0010C789 /* Rubik-SemiBoldItalic.ttf */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		7E52A4BB2D8F4E910010C789 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +451,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E52A4B32D8F4C7E0010C789 /* Rubik-Bold.ttf in Resources */,
 				7E52A4232D8EFBC40010C789 /* Preview Assets.xcassets in Resources */,
+				7E52A4A92D8F4C7E0010C789 /* Rubik-Light.ttf in Resources */,
+				7E52A4B62D8F4C7E0010C789 /* Rubik-MediumItalic.ttf in Resources */,
+				7E52A4AA2D8F4C7E0010C789 /* Rubik-ExtraBold.ttf in Resources */,
+				7E52A4BD2D8FAFBE0010C789 /* Rubik-Italic.ttf in Resources */,
+				7E52A4B22D8F4C7E0010C789 /* Rubik-SemiBoldItalic.ttf in Resources */,
+				7E52A4AC2D8F4C7E0010C789 /* Rubik-LightItalic.ttf in Resources */,
+				7E52A4AF2D8F4C7E0010C789 /* Rubik-Regular.ttf in Resources */,
+				7E52A4B02D8F4C7E0010C789 /* Rubik-BoldItalic.ttf in Resources */,
+				7E52A4B52D8F4C7E0010C789 /* Rubik-Medium.ttf in Resources */,
+				7E52A4AB2D8F4C7E0010C789 /* Rubik-Black.ttf in Resources */,
 				7E52A4202D8EFBC40010C789 /* Assets.xcassets in Resources */,
+				7E52A4AE2D8F4C7E0010C789 /* Rubik-BlackItalic.ttf in Resources */,
+				7E52A4B42D8F4C7E0010C789 /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				7E52A4AD2D8F4C7E0010C789 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +493,7 @@
 			files = (
 				7E52A48D2D8F469F0010C789 /* NetworkDebugger.swift in Sources */,
 				7E52A41E2D8EFBC20010C789 /* ContentView.swift in Sources */,
+				7E52A4BA2D8F4E870010C789 /* FontManager.swift in Sources */,
 				7E52A4612D8F0DB00010C789 /* WorkScheduler.swift in Sources */,
 				7E52A46D2D8F10210010C789 /* Configuration.swift in Sources */,
 				7E52A4802D8F18FC0010C789 /* NetworkClient.swift in Sources */,
@@ -577,6 +671,7 @@
 				DEVELOPMENT_TEAM = 3F8C4P2T95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Audora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,6 +701,7 @@
 				DEVELOPMENT_TEAM = 3F8C4P2T95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Audora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
