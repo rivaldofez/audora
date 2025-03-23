@@ -19,5 +19,10 @@
 		<string>Rubik-Bold.ttf</string>
 		<string>Rubik-Italic.ttf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string></string>
+	</dict>
 </dict>
 </plist>

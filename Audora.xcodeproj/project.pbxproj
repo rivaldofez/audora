@@ -63,6 +63,7 @@
 		7E8B4CCB2D902862001F626E /* MusicUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCA2D902862001F626E /* MusicUseCaseMock.swift */; };
 		7E8B4CCD2D902A41001F626E /* MusicResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCC2D902A41001F626E /* MusicResponseMock.swift */; };
 		7E8B4CCF2D902D3C001F626E /* Publisher+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CCE2D902D3C001F626E /* Publisher+Ext.swift */; };
+		7E8B4CD12D9049EB001F626E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8B4CD02D9049EB001F626E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		7E8B4CCA2D902862001F626E /* MusicUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicUseCaseMock.swift; sourceTree = "<group>"; };
 		7E8B4CCC2D902A41001F626E /* MusicResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponseMock.swift; sourceTree = "<group>"; };
 		7E8B4CCE2D902D3C001F626E /* Publisher+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Ext.swift"; sourceTree = "<group>"; };
+		7E8B4CD02D9049EB001F626E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			children = (
 				7E52A41B2D8EFBC20010C789 /* AudoraApp.swift */,
 				7E52A4882D8F3D700010C789 /* AppDelegate.swift */,
+				7E8B4CD02D9049EB001F626E /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				7E52A4AA2D8F4C7E0010C789 /* Rubik-ExtraBold.ttf in Resources */,
 				7E52A4BD2D8FAFBE0010C789 /* Rubik-Italic.ttf in Resources */,
 				7E52A4B22D8F4C7E0010C789 /* Rubik-SemiBoldItalic.ttf in Resources */,
+				7E8B4CD12D9049EB001F626E /* LaunchScreen.storyboard in Resources */,
 				7E52A4AC2D8F4C7E0010C789 /* Rubik-LightItalic.ttf in Resources */,
 				7E52A4AF2D8F4C7E0010C789 /* Rubik-Regular.ttf in Resources */,
 				7E52A4B02D8F4C7E0010C789 /* Rubik-BoldItalic.ttf in Resources */,
@@ -862,7 +866,7 @@
 				INFOPLIST_FILE = Audora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -892,7 +896,7 @@
 				INFOPLIST_FILE = Audora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
