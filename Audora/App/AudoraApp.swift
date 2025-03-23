@@ -17,7 +17,7 @@ struct AudoraApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MusicPlayerView()
         }
     }
 }
