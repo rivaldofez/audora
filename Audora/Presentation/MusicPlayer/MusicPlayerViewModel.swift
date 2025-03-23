@@ -19,7 +19,6 @@ protocol MusicPlayerViewModelProtocol {
 final class MusicPlayerViewModel: DefaultViewModel, MusicPlayerViewModelProtocol {
     private let musicUseCase: MusicUseCaseProtocol
     
-    @Published private var musicData: MusicResponse?
     @Published var searchQuery: String = ""
     @Published var playerViewModel: PlayerViewModel!
     @Published var musicList: [MusicItemResponse]
@@ -58,11 +57,29 @@ final class MusicPlayerViewModel: DefaultViewModel, MusicPlayerViewModelProtocol
     }
     
     func onTapNextTrack() {
-
+        guard let currentIndex = musicList.firstIndex(where: { $0 == selectedMusic }) else {
+            if !musicList.isEmpty {
+                selectMusic(selectedMusic: musicList[0])
+            }
+            return
+        }
+        
+        if currentIndex < musicList.count - 1 {
+            selectMusic(selectedMusic: musicList[currentIndex + 1])
+        }
     }
     
     func onTapPrevTrack() {
-
+        guard let currentIndex = musicList.firstIndex(where: { $0 == selectedMusic }) else {
+            if !musicList.isEmpty {
+                selectMusic(selectedMusic: musicList[0])
+            }
+            return
+        }
+        
+        if currentIndex > 0 {
+            selectMusic(selectedMusic: musicList[currentIndex - 1])
+        }
     }
     
     func onTapPlayTrack(state: Bool) {

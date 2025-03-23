@@ -41,7 +41,6 @@
 		7E52A4B62D8F4C7E0010C789 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A82D8F4C7E0010C789 /* Rubik-MediumItalic.ttf */; };
 		7E52A4BA2D8F4E870010C789 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E52A4B92D8F4E870010C789 /* FontManager.swift */; };
 		7E52A4BD2D8FAFBE0010C789 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E52A4A32D8F4C7D0010C789 /* Rubik-Italic.ttf */; };
-		7E8B4C7A2D8FB742001F626E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4C792D8FB742001F626E /* AppRouter.swift */; };
 		7E8B4C832D8FB850001F626E /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4C822D8FB850001F626E /* NavigationBarModifier.swift */; };
 		7E8B4C862D8FBA73001F626E /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4C852D8FBA73001F626E /* Injection.swift */; };
 		7E8B4C892D8FBAAE001F626E /* MusicPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4C882D8FBAAE001F626E /* MusicPlayerViewModel.swift */; };
@@ -54,6 +53,8 @@
 		7E8B4CA22D8FF112001F626E /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CA12D8FF112001F626E /* SpectrumView.swift */; };
 		7E8B4CA42D8FF95E001F626E /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CA32D8FF95E001F626E /* PlayerView.swift */; };
 		7E8B4CA72D8FFC71001F626E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CA62D8FFC71001F626E /* PlayerViewModel.swift */; };
+		7E8B4CB62D9015DA001F626E /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CB52D9015DA001F626E /* Shimmer.swift */; };
+		7E8B4CB92D901B74001F626E /* GeneralErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,6 @@
 		7E52A4A82D8F4C7E0010C789 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
 		7E52A4B92D8F4E870010C789 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		7E52A4BC2D8FACAA0010C789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		7E8B4C792D8FB742001F626E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		7E8B4C822D8FB850001F626E /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		7E8B4C852D8FBA73001F626E /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		7E8B4C882D8FBAAE001F626E /* MusicPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +123,8 @@
 		7E8B4CA12D8FF112001F626E /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
 		7E8B4CA32D8FF95E001F626E /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7E8B4CA62D8FFC71001F626E /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		7E8B4CB52D9015DA001F626E /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +248,6 @@
 				7E52A4592D8F0DB00010C789 /* BaseViewModel.swift */,
 				7E52A45A2D8F0DB00010C789 /* NetworkError.swift */,
 				7E52A45B2D8F0DB00010C789 /* WorkScheduler.swift */,
-				7E8B4C792D8FB742001F626E /* AppRouter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -369,6 +370,8 @@
 		7E8B4C802D8FB839001F626E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				7E8B4CB72D901B66001F626E /* GeneralError */,
+				7E8B4CB42D9015D0001F626E /* Shimmer */,
 				7E8B4C812D8FB840001F626E /* ViewModifier */,
 			);
 			path = Component;
@@ -437,6 +440,22 @@
 				7E8B4C8C2D8FBB0E001F626E /* MusicResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7E8B4CB42D9015D0001F626E /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CB52D9015DA001F626E /* Shimmer.swift */,
+			);
+			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		7E8B4CB72D901B66001F626E /* GeneralError */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B4CB82D901B74001F626E /* GeneralErrorView.swift */,
+			);
+			path = GeneralError;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,8 +622,8 @@
 				7E8B4C892D8FBAAE001F626E /* MusicPlayerViewModel.swift in Sources */,
 				7E52A47C2D8F181E0010C789 /* Dictionary+Ext.swift in Sources */,
 				7E8B4CA02D8FE675001F626E /* MusicItemView.swift in Sources */,
+				7E8B4CB92D901B74001F626E /* GeneralErrorView.swift in Sources */,
 				7E8B4C912D8FC0B6001F626E /* MusicPlayerView.swift in Sources */,
-				7E8B4C7A2D8FB742001F626E /* AppRouter.swift in Sources */,
 				7E52A47A2D8F14070010C789 /* RequestBuilder.swift in Sources */,
 				7E8B4C832D8FB850001F626E /* NavigationBarModifier.swift in Sources */,
 				7E8B4C9E2D8FE2BA001F626E /* SearchView.swift in Sources */,
@@ -613,6 +632,7 @@
 				7E8B4C8D2D8FBB0E001F626E /* MusicResponse.swift in Sources */,
 				7E52A41C2D8EFBC20010C789 /* AudoraApp.swift in Sources */,
 				7E52A45F2D8F0DB00010C789 /* BaseViewModel.swift in Sources */,
+				7E8B4CB62D9015DA001F626E /* Shimmer.swift in Sources */,
 				7E8B4C8B2D8FBAE8001F626E /* MusicUseCase.swift in Sources */,
 				7E8B4C862D8FBA73001F626E /* Injection.swift in Sources */,
 				7E8B4C8F2D8FBBA2001F626E /* MusicRemote.swift in Sources */,
